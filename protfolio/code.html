@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ayesha Tariq | Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007bff",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-slate-900 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-primary" data-alt="Professional portrait of Ayesha Tariq smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAb011DBAWwwXSjFNSy6UyA74r7UyIGsq8j-u-jXDi1-D3QzS9xhlaRvJuvOhUl24N67vl2WGAWgz774RJriLZG9PElCc1Bdc3hqB4jBjIE142ZV09X_U9s4V6MsSutvuyCnndWVMfsnIca2zVs_Sgqb6ZGM2Ej5m-ceaYn-o7Z6JWiN_Pb4oAiHGkL4K0dF6UBE6xzzGX4kRtuIf_yQ9A4UVNwryOPCm8rNqKp5Mm8fIIFFuFdazTg3RyVwjkX0D00NhrSR6QNWqMq')"></div>
+<div>
+<h1 class="text-sm font-bold leading-none">Ayesha Tariq</h1>
+<p class="text-[10px] text-primary font-medium uppercase tracking-wider">Web Developer</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="bg-primary text-white p-2 rounded-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+<button class="text-slate-600 p-2" id="menuBtn">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Side Drawer (Right) -->
+<div class="fixed inset-0 z-50 invisible transition-all duration-300" id="sidebar">
+<div class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="overlay"></div>
+<div class="absolute right-0 top-0 h-full w-4/5 max-w-[300px] bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" id="drawer">
+<div class="p-6 flex justify-between items-center border-b border-slate-100">
+<span class="font-bold text-lg text-primary">Navigation</span>
+<button class="text-slate-400" id="closeBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-1 p-6 space-y-4">
+<a class="flex items-center gap-4 p-3 rounded-xl bg-primary/10 text-primary font-semibold" href="#home">
+<span class="material-symbols-outlined">home</span> Home
+                </a>
+<a class="flex items-center gap-4 p-3 rounded-xl text-slate-600 hover:bg-slate-50" href="#about">
+<span class="material-symbols-outlined">person</span> About
+                </a>
+<a class="flex items-center gap-4 p-3 rounded-xl text-slate-600 hover:bg-slate-50" href="#skills">
+<span class="material-symbols-outlined">bolt</span> Skills
+                </a>
+<a class="flex items-center gap-4 p-3 rounded-xl text-slate-600 hover:bg-slate-50" href="#projects">
+<span class="material-symbols-outlined">work</span> Projects
+                </a>
+<a class="flex items-center gap-4 p-3 rounded-xl text-slate-600 hover:bg-slate-50" href="#experience">
+<span class="material-symbols-outlined">history</span> Experience
+                </a>
+<a class="flex items-center gap-4 p-3 rounded-xl text-slate-600 hover:bg-slate-50" href="#contact">
+<span class="material-symbols-outlined">mail</span> Contact
+                </a>
+</nav>
+<div class="p-6 border-t border-slate-100">
+<p class="text-xs text-slate-400 text-center">© 2024 Ayesha Tariq</p>
+</div>
+</div>
+</div>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="px-6 pt-12 pb-8 bg-gradient-to-b from-white to-background-light" id="home">
+<div class="flex flex-col items-center text-center">
+<div class="relative mb-6">
+<div class="w-32 h-32 rounded-full border-4 border-white shadow-xl bg-cover bg-center overflow-hidden" data-alt="Modern professional woman in workspace background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGA8-M-TRxhVZfoQEvnORETWnYGIB4rSm9S9LB6VlGys_QmmHgpPTssBr3msKw1qI0JUAWbjKQBGZhNBsUx0ib93ZNe-Jx94flYjRnamtQrBlOhm9EnXlEvCp3OG4qzFIqU_ee2T0heFjI2QLow-J3Wx5vgaOii5kLQu0DFJ71v1UAH51IXqSZ8UWuvIkTop-zo0LrFIxCf-EW2IwOIZreq1VGJkRU1_JEHib3YdcYEYCrOjw50hAyWrZ1yHFIrf9ZFSjlgXGbDAIo')"></div>
+<div class="absolute bottom-1 right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white"></div>
+</div>
+<h2 class="text-3xl font-extrabold text-slate-900 mb-1 tracking-tight">Ayesha Tariq</h2>
+<p class="text-lg text-primary font-semibold mb-4">Web Developer</p>
+<p class="text-slate-600 leading-relaxed max-w-sm mb-6">
+                    Crafting elegant, high-performance web experiences with modern technologies. Passionate about turning complex problems into beautiful interfaces.
+                </p>
+<div class="flex gap-3">
+<button class="bg-primary text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-primary/25 active:scale-95 transition-all">Hire Me</button>
+<button class="bg-white text-slate-700 border border-slate-200 px-6 py-2.5 rounded-full font-bold shadow-sm active:scale-95 transition-all">Resume</button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-6 py-10" id="about">
+<div class="flex items-center gap-2 mb-4">
+<span class="h-1 w-8 bg-primary rounded-full"></span>
+<h3 class="text-xl font-bold">About Me</h3>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+<p class="text-slate-600 leading-relaxed">
+                    A dedicated Web Developer with a focus on creating functional and aesthetically pleasing websites. My career goal is to leverage cutting-edge technologies like React and Node.js to solve complex problems and deliver seamless user experiences. I thrive in collaborative environments and am constantly learning new frameworks to stay at the forefront of the industry.
+                </p>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="px-6 py-10 bg-white" id="skills">
+<div class="flex items-center gap-2 mb-6">
+<span class="h-1 w-8 bg-primary rounded-full"></span>
+<h3 class="text-xl font-bold">Technical Skills</h3>
+</div>
+<div class="space-y-5">
+<!-- Skill Item -->
+<div>
+<div class="flex justify-between mb-1.5 px-1">
+<span class="text-sm font-semibold text-slate-700">HTML &amp; CSS</span>
+<span class="text-sm font-bold text-primary">95%</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full">
+<div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1.5 px-1">
+<span class="text-sm font-semibold text-slate-700">JavaScript</span>
+<span class="text-sm font-bold text-primary">90%</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full">
+<div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1.5 px-1">
+<span class="text-sm font-semibold text-slate-700">React.js</span>
+<span class="text-sm font-bold text-primary">85%</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full">
+<div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1.5 px-1">
+<span class="text-sm font-semibold text-slate-700">Node.js</span>
+<span class="text-sm font-bold text-primary">80%</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full">
+<div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1.5 px-1">
+<span class="text-sm font-semibold text-slate-700">Databases (SQL/NoSQL)</span>
+<span class="text-sm font-bold text-primary">75%</span>
+</div>
+<div class="w-full bg-slate-100 h-2.5 rounded-full">
+<div class="bg-primary h-2.5 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="px-6 py-10" id="projects">
+<div class="flex items-center gap-2 mb-6">
+<span class="h-1 w-8 bg-primary rounded-full"></span>
+<h3 class="text-xl font-bold">Featured Projects</h3>
+</div>
+<div class="grid gap-6">
+<!-- Project Card -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+<div class="h-40 bg-cover bg-center" data-alt="Sleek e-commerce dashboard interface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApTb721r1lBg1oVbNGx2Hd7u1ECgYgUvjOLlyNa6K_yPpa4xxmxnzp8CAP2OlTkcWYOVexFMs6-aQcdNL45_HbkYXi8lRxVRMhK006PpEFkiiciETP9Rt97T1H05PNI3IqpCVjMem8NxKuTgjtvtgpPJ_HJauYu5Yub1mCEqDX5rXtEwdVpVqUjVzk2-5Yt1fdyjmv1bZA35_gi_JmBAlhKg2aKKVExK-54DjMXqBGJ80V5lXG4ZvE0oA9PlEEgePWmHUDsc6Ywu2s')"></div>
+<div class="p-5">
+<h4 class="text-lg font-bold mb-2">E-Commerce Platform</h4>
+<p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            A full-stack online marketplace with real-time inventory and stripe payment integration.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-full uppercase">React</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-full uppercase">Node.js</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-full uppercase">MongoDB</span>
+</div>
+<a class="inline-flex items-center text-primary font-bold text-sm gap-1" href="#">
+                            View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Project Card -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+<div class="h-40 bg-cover bg-center" data-alt="Analytics chart visualizer app screenshot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAU2HNg4BrO54IE2_vVdlecLlECdS9xC5JBCncnhWSJ3bossnRvSpE6zf-EwBslQVKVHn8m4xVVdZwQ2_LJHzXPlVSDzQuuEvgLWsF-0Khh7TUoBye4S2E_bC4sqywli3M4JwQRtGeSzMMPy_Gfhe7k6o-YOWdRK80QNEk_uA0A_TNlLsjH0YxKK148jN4NERCRcOSAf4q6pfKPUt7kPsGoxGdNoJ2BQSBzkXyriWhpxfFWf7eiGvbKr8vYllcHQLGakt2A9i-jn8HJ')"></div>
+<div class="p-5">
+<h4 class="text-lg font-bold mb-2">Portfolio Analytics</h4>
+<p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                            Custom data visualization dashboard for tracking personal finance and investments.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-full uppercase">D3.js</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-full uppercase">Firebase</span>
+</div>
+<a class="inline-flex items-center text-primary font-bold text-sm gap-1" href="#">
+                            View on GitHub <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Education -->
+<section class="px-6 py-10 bg-slate-50" id="experience">
+<div class="flex items-center gap-2 mb-8">
+<span class="h-1 w-8 bg-primary rounded-full"></span>
+<h3 class="text-xl font-bold">Experience &amp; Education</h3>
+</div>
+<div class="relative pl-8 space-y-10 before:absolute before:left-3 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-200">
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-8 top-1.5 w-6 h-6 rounded-full bg-primary border-4 border-white shadow-sm"></div>
+<p class="text-[10px] font-bold text-primary uppercase mb-1">2022 - Present</p>
+<h4 class="font-bold text-slate-900">Senior Web Developer</h4>
+<p class="text-sm text-slate-500 mb-2">TechVision Solutions</p>
+<p class="text-xs text-slate-600 leading-relaxed">Leading front-end development teams and architecting scalable web applications using React and Tailwind CSS.</p>
+</div>
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-8 top-1.5 w-6 h-6 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+<p class="text-[10px] font-bold text-primary uppercase mb-1">2020 - 2022</p>
+<h4 class="font-bold text-slate-900">Junior Developer</h4>
+<p class="text-sm text-slate-500 mb-2">Digital Dynamics</p>
+<p class="text-xs text-slate-600 leading-relaxed">Assisted in building responsive landing pages and integrating API endpoints for client projects.</p>
+</div>
+<!-- Timeline Item -->
+<div class="relative">
+<div class="absolute -left-8 top-1.5 w-6 h-6 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+<p class="text-[10px] font-bold text-primary uppercase mb-1">2016 - 2020</p>
+<h4 class="font-bold text-slate-900">B.S. in Computer Science</h4>
+<p class="text-sm text-slate-500 mb-2">University of Technology</p>
+<p class="text-xs text-slate-600 leading-relaxed">Graduated with honors. Focused on Software Engineering and Database Management Systems.</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-6 py-12" id="contact">
+<div class="flex items-center gap-2 mb-6">
+<span class="h-1 w-8 bg-primary rounded-full"></span>
+<h3 class="text-xl font-bold">Get In Touch</h3>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 mb-8">
+<form class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 ml-1">Full Name</label>
+<input class="w-full bg-slate-50 border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary/20 transition-all text-sm" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 ml-1">Email Address</label>
+<input class="w-full bg-slate-50 border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary/20 transition-all text-sm" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-500 uppercase mb-1.5 ml-1">Your Message</label>
+<textarea class="w-full bg-slate-50 border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary/20 transition-all text-sm" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/25 active:scale-95 transition-all" type="submit">Send Message</button>
+</form>
+</div>
+<div class="space-y-4">
+<a class="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-100" href="mailto:ayeshatariq1087@gmail.com">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase">Email Me</p>
+<p class="text-sm font-semibold">ayeshatariq1087@gmail.com</p>
+</div>
+</a>
+<a class="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-100" href="tel:03326737488">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase">Call Me</p>
+<p class="text-sm font-semibold">03326737488</p>
+</div>
+</a>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-slate-100 py-10 px-6 text-center">
+<h2 class="text-xl font-bold text-slate-900 mb-2">Ayesha Tariq</h2>
+<p class="text-sm text-slate-500 mb-6">Building the web of tomorrow, one pixel at a time.</p>
+<div class="flex justify-center gap-6 mb-8">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+</div>
+<p class="text-xs text-slate-400">© 2024 Ayesha Tariq Portfolio. All rights reserved.</p>
+</footer>
+<!-- Sidebar Script -->
+<script>
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const sidebar = document.getElementById('sidebar');
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('overlay');
+        const navLinks = document.querySelectorAll('#drawer nav a');
+
+        function toggleMenu(isOpen) {
+            if (isOpen) {
+                sidebar.classList.remove('invisible');
+                setTimeout(() => {
+                    drawer.classList.remove('translate-x-full');
+                    overlay.classList.remove('opacity-0');
+                }, 10);
+            } else {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    sidebar.classList.add('invisible');
+                }, 300);
+            }
+        }
+
+        menuBtn.addEventListener('click', () => toggleMenu(true));
+        closeBtn.addEventListener('click', () => toggleMenu(false));
+        overlay.addEventListener('click', () => toggleMenu(false));
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+    </script>
+</body></html>
