@@ -76,11 +76,9 @@ The application performs:
 
 ### SQLite Output
 
-
-Screenshot 2026-03-07 133349.png → mongodb.png  
-Screenshot 2026-03-07 133459.png → mysql.png  
-Screenshot 2026-03-07 133539.png → sqlite.png  
-
+mongodb.png
+mysql.png
+sqlite.png
 
 This project helps in understanding how Node.js works with different databases and how CRUD operations are implemented in real-world applications.
 
