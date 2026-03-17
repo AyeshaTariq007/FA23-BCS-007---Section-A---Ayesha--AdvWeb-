@@ -72,12 +72,12 @@ The application performs:
 ## 📸 Screenshots
 
 ### MongoDB Output
+mongodb.png
+
 ### MySQL Output
+mysql.png
 
 ### SQLite Output
-
-mongodb.png
-mysql.png
 sqlite.png
 
 This project helps in understanding how Node.js works with different databases and how CRUD operations are implemented in real-world applications.
